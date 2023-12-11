@@ -12,7 +12,7 @@ def main(input_path: str):
 
     for line in lines:
         valid_nums = [ele for ele in line if ele in valid_chars]
-        line_numbers.append(int(valid_nums[0] + valid_nums[len(valid_nums) - 1]))
+        line_numbers.append(int(valid_nums[0] + valid_nums[-1]))
             
     return sum(line_numbers)        
     
