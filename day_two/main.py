@@ -38,10 +38,6 @@ def main(input_path: str):
         if color_dict.get('red') <= color_test[0] and\
         color_dict.get('green') <= color_test[1] and\
         color_dict.get('blue') <= color_test[2]:
-
-            if color_dict.get('red') < 1: color_dict['red'] = 1
-            if color_dict.get('green') < 1: color_dict['green'] = 1
-            if color_dict.get('blue') < 1: color_dict['blue'] = 1
             
             game_id = int(re.split(' ', tokens[0])[1])
             part_one_answer = part_one_answer + game_id
